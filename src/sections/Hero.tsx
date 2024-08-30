@@ -129,7 +129,7 @@ export const HeroSection = () => {
         </div>
         <div className="">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Hey 👋 I am Shivananda Sai
+            Hey 👋 I am Shivananda
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             An Enthusiastic Frontend Development Professional
