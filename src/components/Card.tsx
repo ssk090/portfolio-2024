@@ -1,11 +1,12 @@
 import grainImage from "@/assets/images/grain.jpg";
 import { twMerge } from "tailwind-merge";
-import { PropsWithChildren } from "react";
+import { ComponentPropsWithoutRef, PropsWithChildren } from "react";
 
 export const Card = ({
   className,
   children,
-}: PropsWithChildren<{ className?: string }>) => {
+  ...otherProps
+}: ComponentPropsWithoutRef<"div">) => {
   return (
     <>
       <div
@@ -13,6 +14,7 @@ export const Card = ({
           "bg-[#0f0f0f] rounded-3xl relative z-0 after:z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none",
           className
         )}
+        {...otherProps}
       >
         <div
           className="absolute inset-0 -z-10 opacity-5"

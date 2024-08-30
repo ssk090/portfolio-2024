@@ -21,34 +21,95 @@ export const HeroSection = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
 
-        <HeroOrbit size={800} rotation={-72}>
-          <StarIcon className="size-28 text-white" />
+        <HeroOrbit
+          size={430}
+          rotation={-14}
+          shouldOrbit
+          orbitDuration="30s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <SparkleIcon
+            className="size-8 text-white/20"
+            shouldSpin
+            spinDuration="10s"
+          />
         </HeroOrbit>
-        <HeroOrbit size={550} rotation={20}>
-          <StarIcon className="size-12 text-white" />
-        </HeroOrbit>
-        <HeroOrbit size={590} rotation={98}>
-          <StarIcon className="size-8 text-white" />
-        </HeroOrbit>
-        <HeroOrbit size={430} rotation={-14}>
-          <SparkleIcon className="size-8 text-white/20" />
-        </HeroOrbit>
-        <HeroOrbit size={440} rotation={79}>
+        <HeroOrbit
+          size={440}
+          rotation={79}
+          shouldOrbit
+          orbitDuration="32s"
+          shouldSpin
+          spinDuration="6s"
+        >
           <SparkleIcon className="size-5 text-white/20" />
         </HeroOrbit>
-        <HeroOrbit size={530} rotation={178}>
-          <SparkleIcon className="size-10 text-white/20" />
-        </HeroOrbit>
-        <HeroOrbit size={710} rotation={144}>
-          <SparkleIcon className="size-14 text-white/20" />
-        </HeroOrbit>
-        <HeroOrbit size={720} rotation={85}>
-          <div className="size-3 bg-yellow-300 rounded-full"></div>
-        </HeroOrbit>
-        <HeroOrbit size={520} rotation={-41}>
+        <HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration="34s">
           <div className="size-2 bg-yellow-300 rounded-full"></div>
         </HeroOrbit>
-        <HeroOrbit size={650} rotation={-5}>
+        <HeroOrbit
+          size={530}
+          rotation={178}
+          shouldOrbit
+          orbitDuration="36s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <SparkleIcon className="size-10 text-white/20" />
+        </HeroOrbit>
+        <HeroOrbit
+          size={800}
+          rotation={-72}
+          shouldOrbit
+          orbitDuration="38s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <StarIcon
+            className="size-28 text-white"
+            shouldSpin
+            spinDuration="10s"
+          />
+        </HeroOrbit>
+        <HeroOrbit
+          size={550}
+          rotation={20}
+          shouldOrbit
+          orbitDuration="40s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <StarIcon className="size-12 text-white" />
+        </HeroOrbit>
+        <HeroOrbit
+          size={590}
+          rotation={98}
+          shouldOrbit
+          orbitDuration="42s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <StarIcon className="size-8 text-white" />
+        </HeroOrbit>
+        <HeroOrbit size={650} rotation={-5} shouldOrbit orbitDuration="44s">
+          <div className="size-3 bg-yellow-300 rounded-full"></div>
+        </HeroOrbit>
+        <HeroOrbit
+          size={710}
+          rotation={144}
+          shouldOrbit
+          orbitDuration="46s"
+          shouldSpin
+          spinDuration="6s"
+        >
+          <SparkleIcon
+            className="size-14 text-white/20"
+            shouldSpin
+            spinDuration="10s"
+          />
+        </HeroOrbit>
+        <HeroOrbit size={720} rotation={85} shouldOrbit orbitDuration="48s">
           <div className="size-3 bg-yellow-300 rounded-full"></div>
         </HeroOrbit>
       </div>
@@ -57,7 +118,9 @@ export const HeroSection = () => {
         <div className="flex flex-col items-center justify-center">
           <Image src={memojiImage} alt="Memoji Computer" width={100} />
           <div className="bg-[#0f0f0f] border border-gray-800 px-4 py-2 rounded-3xl text-white/90 text-sm inline-flex items-center gap-4">
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+            </div>
             <div className="text-sm font-medium">Caffine and Code</div>
           </div>
         </div>
