@@ -26,13 +26,13 @@ export const HeroSection = () => {
           rotation={-14}
           shouldOrbit
           orbitDuration="30s"
-          shouldSpin
-          spinDuration="6s"
+          shouldspin="true"
+          spinduration="6s"
         >
           <SparkleIcon
             className="size-8 text-white/20"
-            shouldSpin
-            spinDuration="10s"
+            shouldspin="true"
+            spinduration="10s"
           />
         </HeroOrbit>
         <HeroOrbit
@@ -40,8 +40,8 @@ export const HeroSection = () => {
           rotation={79}
           shouldOrbit
           orbitDuration="32s"
-          shouldSpin
-          spinDuration="6s"
+          shouldspin="true"
+          spinduration="6s"
         >
           <SparkleIcon className="size-5 text-white/20" />
         </HeroOrbit>
@@ -53,8 +53,8 @@ export const HeroSection = () => {
           rotation={178}
           shouldOrbit
           orbitDuration="36s"
-          shouldSpin
-          spinDuration="6s"
+          shouldspin="true"
+          spinduration="6s"
         >
           <SparkleIcon className="size-10 text-white/20" />
         </HeroOrbit>
@@ -63,13 +63,13 @@ export const HeroSection = () => {
           rotation={-72}
           shouldOrbit
           orbitDuration="38s"
-          shouldSpin
-          spinDuration="6s"
+          shouldspin="true"
+          spinduration="6s"
         >
           <StarIcon
             className="size-28 text-white"
-            shouldSpin
-            spinDuration="10s"
+            shouldspin="true"
+            spinduration="10s"
           />
         </HeroOrbit>
         <HeroOrbit
@@ -77,8 +77,8 @@ export const HeroSection = () => {
           rotation={20}
           shouldOrbit
           orbitDuration="40s"
-          shouldSpin
-          spinDuration="6s"
+          shouldspin="true"
+          spinduration="6s"
         >
           <StarIcon className="size-12 text-white" />
         </HeroOrbit>
@@ -87,8 +87,8 @@ export const HeroSection = () => {
           rotation={98}
           shouldOrbit
           orbitDuration="42s"
-          shouldSpin
-          spinDuration="6s"
+          shouldspin="true"
+          spinduration="6s"
         >
           <StarIcon className="size-8 text-white" />
         </HeroOrbit>
@@ -100,13 +100,13 @@ export const HeroSection = () => {
           rotation={144}
           shouldOrbit
           orbitDuration="46s"
-          shouldSpin
-          spinDuration="6s"
+          shouldspin="true"
+          spinduration="6s"
         >
           <SparkleIcon
             className="size-14 text-white/20"
-            shouldSpin
-            spinDuration="10s"
+            shouldspin="true"
+            spinduration="10s"
           />
         </HeroOrbit>
         <HeroOrbit size={720} rotation={85} shouldOrbit orbitDuration="48s">
