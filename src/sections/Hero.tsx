@@ -8,8 +8,25 @@ import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { handleScroll } from "@/utils";
+import { useEffect, useState } from "react";
 
 export const HeroSection = () => {
+  const [localTime, setLocalTime] = useState("-");
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const timeString = `${hours}:${minutes < 10 ? "0" + minutes : minutes}`;
+      setLocalTime(`${timeString} GMT (+5:30)`);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 60000); // Update time every minute
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -124,7 +141,7 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
             </div>
-            <div className="text-sm font-medium">Caffine and Code</div>
+            <div className="text-sm font-medium">{localTime}</div>
           </div>
         </div>
         <div className="">
