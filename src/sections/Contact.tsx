@@ -16,10 +16,10 @@ export const ContactSection = () => {
             <div className="">
               <h2 className="font-serif text-2xl md:text-3xl">Hiring?</h2>
               <p className="text-sm md:text-base mt-2">
-                I am Shivananda, a Software Engineer with almost 4 years of
-                experience in the industry. I am passionate about building
-                innovative solutions that solve real-world problems. I am
-                excited to bring my skills and experience to your team.
+                I am Shivananda, a Software Engineer with ~4 years of experience
+                in the industry. I am passionate about building innovative
+                solutions that solve real-world problems. I am excited to bring
+                my skills and experience to your team.
               </p>
             </div>
             <div>
