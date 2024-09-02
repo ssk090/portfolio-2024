@@ -40,11 +40,11 @@ const portfolioProjects = [
       },
       {
         title:
-          "Learnt new technologies and tools, such as React Native and Docker",
+          "Learnt React Native and implemented a cross-platform mobile app",
       },
       {
         title:
-          "Collaborated with cross-functional teams to deliver successful projects",
+          "Collaborated with cross-functional teams to deliver high-quality code",
       },
     ],
     link: "https://youtu.be/Z7I5uSRHMHg",
