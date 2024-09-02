@@ -100,8 +100,8 @@ const hobbies = [
     top: "45%",
   },
   {
-    title: "Reading",
-    emoji: "📚",
+    title: "Plane Spotting",
+    emoji: "✈️",
     left: "5%",
     top: "65%",
   },
@@ -110,12 +110,6 @@ const hobbies = [
     emoji: "🏋️‍♀️",
     left: "45%",
     top: "70%",
-  },
-  {
-    title: "Plane Spotting",
-    emoji: "✈️",
-    left: "45%",
-    top: "30%",
   },
 ];
 

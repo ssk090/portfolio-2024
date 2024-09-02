@@ -16,7 +16,7 @@ export const ContactSection = () => {
             <div className="">
               <h2 className="font-serif text-2xl md:text-3xl">Hiring?</h2>
               <p className="text-sm md:text-base mt-2">
-                I am Shivananda, a Software Engineer with over 3 years of
+                I am Shivananda, a Software Engineer with almost 4 years of
                 experience in the industry. I am passionate about building
                 innovative solutions that solve real-world problems. I am
                 excited to bring my skills and experience to your team.
@@ -29,7 +29,7 @@ export const ContactSection = () => {
                 rel="noopener noreferrer"
               >
                 <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
-                  <span className="font-semibold">Check out My CV</span>
+                  <span className="font-semibold">Check out my CV</span>
                   <ArrowUpRight className="size-4" />
                 </button>
               </a>
