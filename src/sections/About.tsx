@@ -6,48 +6,66 @@ import BookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
 import mapImage from "@/assets/images/map.png";
 import smileEmoji from "@/assets/images/memoji-smile.png";
-
-// import icons for the toolbox
-import JavascriptIcon from "@/assets/icons/square-js.svg";
-import HTMLIcon from "@/assets/icons/html5.svg";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const toolboxItems = [
   {
-    title: "JavaScript",
-    iconType: JavascriptIcon,
+    title: "HTML",
   },
   {
-    title: "HTML1",
-    iconType: HTMLIcon,
+    title: "CSS",
   },
   {
-    title: "HTML2",
-    iconType: HTMLIcon,
+    title: "Javascript",
   },
   {
-    title: "HTML3",
-    iconType: HTMLIcon,
+    title: "Typescript",
   },
-  // {
-  //   title: "Next.js",
-  //   iconType: "",
-  // },
-  // {
-  //   title: "Tailwind CSS",
-  //   iconType: "",
-  // },
-  // {
-  //   title: "TypeScript",
-  //   iconType: "",
-  // },
-  // {
-  //   title: "Node.js",
-  //   iconType: "",
-  // },
+  {
+    title: "React",
+  },
+  {
+    title: "Redux Toolkit",
+  },
+  {
+    title: "NextJs",
+  },
+  {
+    title: "Tailwind CSS",
+  },
+  {
+    title: "Node.js",
+  },
+  {
+    title: "Express",
+  },
+  {
+    title: "MongoDB",
+  },
+  {
+    title: "Redis",
+  },
+  {
+    title: "Kafka",
+  },
+  {
+    title: "Postgres",
+  },
+  {
+    title: "Prisma",
+  },
+  {
+    title: "Hono",
+  },
+  {
+    title: "Docker",
+  },
+  {
+    title: "Turbo Repo",
+  },
 ];
 
 const hobbies = [
@@ -77,25 +95,40 @@ const hobbies = [
   },
   {
     title: "Music",
-    emoji: "🍳",
-    left: "70%",
+    emoji: "🎵",
+    left: "80%",
     top: "45%",
   },
   {
     title: "Reading",
-    emoji: "🍳",
+    emoji: "📚",
     left: "5%",
     top: "65%",
   },
   {
     title: "Fitness",
-    emoji: "🍳",
+    emoji: "🏋️‍♀️",
     left: "45%",
     top: "70%",
+  },
+  {
+    title: "Plane Spotting",
+    emoji: "✈️",
+    left: "45%",
+    top: "30%",
   },
 ];
 
 export const AboutSection = () => {
+  const [isGrabbing, setIsGrabbing] = useState(false);
+
+  const handleMouseDown = () => {
+    setIsGrabbing(true);
+  };
+
+  const handleMouseUp = () => {
+    setIsGrabbing(false);
+  };
   const constraintRef = useRef<HTMLDivElement>(null);
   return (
     <div className="py-20 lg:py-28">
@@ -119,18 +152,18 @@ export const AboutSection = () => {
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Toolbox"
-                description="Explore the technologies and tools I use to craft exceptional digital experiences."
+                description="Explore the technologies and tools I use to craft exceptional digital experiences"
                 className=""
               />
               <ToolboxItems
                 items={toolboxItems}
                 className=""
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+                itemsWrapperClassName="animate-move-left [animation-duration:80s]"
               />
               <ToolboxItems
                 items={toolboxItems}
                 className="mt-6"
-                itemsWrapperClassName="animate-move-right [animation-duration:15s]"
+                itemsWrapperClassName="animate-move-right [animation-duration:40s]"
               />
             </Card>
           </div>
@@ -139,7 +172,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the Code"
-                description="Explore my interests and hobbies beyond the digital realm."
+                description="Explore my interests and hobbies beyond the digital realm"
                 className="px-6 py-6"
               />
               <div className="relative flex-1" ref={constraintRef}>
@@ -150,9 +183,12 @@ export const AboutSection = () => {
                     style={{
                       left: hobby.left,
                       top: hobby.top,
+                      cursor: isGrabbing ? "grabbing" : "grab",
                     }}
                     drag
                     dragConstraints={constraintRef}
+                    onMouseDown={handleMouseDown}
+                    onMouseUp={handleMouseUp}
                   >
                     <span className="font-medium text-gray-950">
                       {hobby.title}

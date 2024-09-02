@@ -154,9 +154,9 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a href="#project" onClick={handleScroll} style={{ zIndex: 10 }}>
+          <a href="#work" onClick={handleScroll} style={{ zIndex: 10 }}>
             <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-              <span className="font-semibold">Explore My Work</span>
+              <span className="font-semibold">Career Evolution</span>
               <ArrowDown className="size-4" />
             </button>
           </a>

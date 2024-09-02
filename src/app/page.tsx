@@ -14,11 +14,13 @@ export default function Home() {
         <Header />
       </div>
       <HeroSection />
-      <div id="project">
+      <div id="work">
         <ProjectsSection />
       </div>
       <TapeSection />
-      <TestimonialsSection />
+      <div id="project">
+        <TestimonialsSection />
+      </div>
       <div id="about">
         <AboutSection />
       </div>
