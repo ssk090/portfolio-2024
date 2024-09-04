@@ -8,3 +8,6 @@
 - Next.js
 - Tailwind CSS
 - TypeScript
+
+## Reference:
+https://www.youtube.com/watch?v=IHL_r2otyw4
