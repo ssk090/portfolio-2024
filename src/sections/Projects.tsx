@@ -1,9 +1,4 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
-import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
@@ -27,7 +22,6 @@ const portfolioProjects = [
       },
     ],
     link: "https://drive.google.com/file/d/1Qd1jUONkFZe2ePuAk14_aJY8TQzpd7s0/view?usp=sharing",
-    image: darkSaasLandingPage,
   },
   {
     company: "Altir India Pvt. Ltd.",
@@ -47,8 +41,6 @@ const portfolioProjects = [
           "Collaborated with cross-functional teams to deliver high-quality code",
       },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
   },
 ];
 

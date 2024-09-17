@@ -13,6 +13,10 @@ const footerLinks = [
     title: "Twitter",
     href: "https://x.com/shivananda_ssk",
   },
+  {
+    title: "Peerlist",
+    href: "https://peerlist.io/shivanandasai",
+  },
 ];
 
 export const Footer = () => {
